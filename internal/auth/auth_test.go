@@ -13,7 +13,7 @@ func TestGetAPIKey(t *testing.T) {
 	}{
 		"simple": {
 			headers:  http.Header{"Authorization": {"ApiKey 12345"}},
-			expected: "12346",
+			expected: "12345",
 		},
 		"missing apikey": {
 			headers:  http.Header{"Authorization": {"Bearer 98765"}},
